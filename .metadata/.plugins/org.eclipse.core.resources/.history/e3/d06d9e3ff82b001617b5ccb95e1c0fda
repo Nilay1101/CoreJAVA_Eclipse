@@ -1,0 +1,32 @@
+package SuperInh;
+
+class Master{
+	int a;
+	int b;
+	 Master(){
+		 a=10; 
+	 }
+	 
+	 Master(int x){
+		 a=x;
+	 }
+}
+
+class Slave extends Master{
+	int a;
+	Slave(){
+		super();
+		b=11;
+		System.out.println("Slave Constructor initializes Master b to : " +b);
+		
+	}
+	
+}
+
+public class SuperInh {
+	public static void main(String args[]){
+		Master obj = new Master();
+		Slave obj1 = new Slave();
+	}
+
+}

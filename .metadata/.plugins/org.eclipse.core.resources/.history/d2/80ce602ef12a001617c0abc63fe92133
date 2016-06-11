@@ -1,0 +1,22 @@
+package NestClassStatic;
+
+class Out{
+	
+	void Invoke(){
+		In obj=new In();
+		obj.display();
+	}
+	
+	class In{
+		void display(){
+			System.out.println("Hello World");		}
+	}
+}
+
+public class NestClassStatic {
+	public static void main(String args[]){
+		Out obj=new Out();
+		obj.Invoke();
+	}
+
+}

@@ -1,0 +1,27 @@
+package AbsClass;
+
+abstract class Master{
+	/* final void fun1() {system.out.println("Hello Lights");}  hindering overriding*/
+	abstract void fun1();
+	
+	void fun2(){
+		System.out.println("Hello City");
+	}
+}
+
+class Slave extends Master
+{
+	void fun1(){
+		System.out.println("Hello World");
+	}
+}
+
+public class AbsClass {
+	public static void main(String args[]){
+		Slave s = new Slave();
+		s.fun1();
+		s.fun2();
+		
+	}
+
+}
